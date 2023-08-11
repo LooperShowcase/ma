@@ -56,3 +56,26 @@ html {
   background-repeat: no-repeat;
   background-position: center center;
 }
+/* Mobile responsive styles */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .chat-bubble {
+    max-width: 90%;
+  }
+
+  input[type="text"] {
+    padding: 8px;
+  }
+
+  button#submit-button {
+    padding: 8px 15px;
+  }
+}
