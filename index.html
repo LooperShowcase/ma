@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ma</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAAAAABWESUoAAABQElEQVR4Ac3PIYyDMBiG4VefPDtxEj0xM39qZl40mcPhMzONOjWNrqxA4UgmqklweBQKVfFdGhbSZZvfY5qmb35++DAbO4XQF7xjpN42s1oyXtlr2gN4SRpynnTaANtesy1tkOOR8aoAJ12J6ngmGkknCqn5gv0y8Jv03eYy+PEAu07jCQ66sDqqpohBCVb2PMtvSbeoxRJcLlIFVFKVBuOwBDdNxkzjEbKbVDwHvgZw8j+Qq2fVhhjkxB2g7JwqKJMRhUqo5Lol8OTxMbSsehXw45e9ao+J92EkGaFbBscxLqnbPRhYOVXr/53L+wTVaUDmNZ+tLNyDWgdWl3gxo7otHMYY5DYdwLc6gB18tVLBSVJD6qr6fsoBVt7wyCm4PxfiRyBTx5N8kCQP8DtrzysZrebG9ZLhnaILYbIbPss/4c/row+G/FAAAAAASUVORK5CYII="
+    />
+  </head>
+  <body>
+    <button onclick="speak();">Init audio</button>
+    <div class="container">
+      <img src="" alt="" width="400px" />
+      <h1>My Voice Assistant</h1>
+      <hr />
+      <form
+        onsubmit="
+      event.preventDefault();
+      conversationUserAdd(document.getElementById('input-text').value);
+      openai_test();
+      "
+      >
+        <input type="text" id="input-text" placeholder="Say Something..." />
+        <button id="submit-button">submit</button>
+      </form>
+
+      <div id="chat-container"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
